@@ -2,7 +2,7 @@ require 'yaml'
 require 'base64'
 
 module Cryppo
-  extend self # adds instance methods as module methods.
+  module_function
 
   Error = Class.new(StandardError)
   UnsupportedEncryptionStrategy = Class.new(Error)
